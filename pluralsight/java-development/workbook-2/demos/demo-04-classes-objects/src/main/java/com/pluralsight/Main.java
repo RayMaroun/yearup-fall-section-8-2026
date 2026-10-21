@@ -34,20 +34,20 @@ public class Main {
     public static void main(String[] args) {
         // ---------- Why classes ----------
         System.out.println("========== Why classes ==========");
-        // One pair of variables per student: this does not scale to 30 students.
+        // One pair of variables per learner: this does not scale to 30 learners.
         // A Person class keeps name and age together in one object.
-        // Nothing in the code ties firstStudentName to firstStudentAge except the
+        // Nothing in the code ties firstLearnerName to firstLearnerAge except the
         // variable names. With a class, one variable holds one whole person.
         // The block below prints nothing; it is here to read and compare.
         /*
-        String firstStudentName = "Raymond";
-        int firstStudentAge = 55;
+        String firstLearnerName = "Raymond";
+        int firstLearnerAge = 55;
 
-        String secondStudentName = "Ray";
-        int secondStudentAge = 33;
+        String secondFullName = "Ray";
+        int secondLearnerAge = 33;
 
-        String thirdStudentName = "PotatoSensei";
-        int thirdStudentAge = 23;
+        String thirdLearnerName = "PotatoSensei";
+        int thirdLearnerAge = 23;
         */
         System.out.println();
 
@@ -117,10 +117,10 @@ public class Main {
         // Each object has its own copy of every field. Changing one object
         // leaves the other untouched.
         System.out.println("========== A second object ==========");
-        Person student = new Person("Brandon", 35);   // same class, a separate object
-        student.work(2);                              // only the student's energy changes
+        Person learner = new Person("Brandon", 35);   // same class, a separate object
+        learner.work(2);                              // only the learner's energy changes
         System.out.println(instructor.getName() + " energy: " + instructor.getEnergy());   // still 70
-        System.out.println(student.getName() + " energy: " + student.getEnergy());         // 100 - 20 = 80
+        System.out.println(learner.getName() + " energy: " + learner.getEnergy());         // 100 - 20 = 80
         System.out.println();
 
         // ---------- Dog ----------

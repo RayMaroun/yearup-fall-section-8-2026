@@ -43,12 +43,12 @@ public class Main {
         int age = 26;                   // int: a whole number
         double price = 19.99;           // double: a number with decimals
         char grade = 'A';               // char: exactly one character, in single quotes
-        boolean isStudent = true;       // boolean: true or false, nothing else
+        boolean isEnrolled = true;       // boolean: true or false, nothing else
         String city = "Boston";         // String: text, in double quotes
         System.out.println(age);
         System.out.println(price);
         System.out.println(grade);
-        System.out.println(isStudent);
+        System.out.println(isEnrolled);
         System.out.println(city);
         System.out.println();
 
@@ -128,11 +128,11 @@ public class Main {
         // Variables use camelCase: first word lowercase, each next word capitalized.
         // Constants use UPPER_SNAKE_CASE. A name may contain letters, digits, _ and $,
         // but it cannot start with a digit and cannot be a Java keyword.
-        // Choose names that say what the value is: studentCount, not n.
+        // Choose names that say what the value is: learnerCount, not n.
         System.out.println("========== Naming ==========");
-        int studentCount = 25;                  // camelCase
+        int learnerCount = 25;                  // camelCase
         final double TAX_RATE = 0.0825;         // UPPER_SNAKE_CASE for a constant
-        System.out.println(studentCount);
+        System.out.println(learnerCount);
         System.out.println(TAX_RATE);
         // int 1stPlace = 1;                    // error: a name cannot start with a digit
     }

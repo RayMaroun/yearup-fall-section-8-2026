@@ -129,7 +129,7 @@ int my-total;    // ❌ hyphen is not allowed
 int class;       // ❌ keyword
 ```
 
-By convention, variable names start with a lowercase letter and use camelCase: `studentCount`, `totalPrice`.
+By convention, variable names start with a lowercase letter and use camelCase: `learnerCount`, `totalPrice`.
 
 ---
 
@@ -682,21 +682,21 @@ This is legal and sometimes used when you want to set fields later.
 ### Constructors with No Parameters vs. With Parameters
 
 ```java
-public class Student {
+public class Learner {
     String fullName;
 
-    public Student() {
+    public Learner() {
         this.fullName = "Unknown";
     }
 
-    public Student(String fullName) {
+    public Learner(String fullName) {
         this.fullName = fullName;
     }
 }
 
 // Usage:
-Student s1 = new Student();              // Uses first constructor
-Student s2 = new Student("Maria Lopez"); // Uses second constructor
+Learner s1 = new Learner();              // Uses first constructor
+Learner s2 = new Learner("Maria Lopez"); // Uses second constructor
 ```
 
 ### ⚠️ Watch Out For

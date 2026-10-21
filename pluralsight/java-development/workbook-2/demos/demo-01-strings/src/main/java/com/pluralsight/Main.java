@@ -111,8 +111,8 @@ public class Main {
         // String upperCaseName = name.toUpperCase();     // try it: store the result in a new variable, then print that
         System.out.println(name.toUpperCase());           // RAYMOND
         System.out.println(name);                         // raymond: the original never changes
-        String studentName = "ADAM";
-        System.out.println(studentName.toLowerCase());    // adam
+        String learnerName = "ADAM";
+        System.out.println(learnerName.toLowerCase());    // adam
         // Chaining: each method returns a String, so you can call the next method on it directly.
         // Read it left to right: first trim the spaces, then uppercase what is left.
         String instructorName = "          raymond         ";
@@ -170,11 +170,11 @@ public class Main {
         //   substring(start):      from start to the end of the String.
         // Combined with indexOf, it lets you split text around a character you search for.
         System.out.println("========== substring ==========");
-        String secondStudentName = "Raymond Maroun";
-        int spaceIndex = secondStudentName.indexOf(" ");  // the space is at index 7
-        String firstName = secondStudentName.substring(0, spaceIndex);  // index 0 to 6: the end index is not included
+        String secondFullName = "Raymond Maroun";
+        int spaceIndex = secondFullName.indexOf(" ");  // the space is at index 7
+        String firstName = secondFullName.substring(0, spaceIndex);  // index 0 to 6: the end index is not included
         System.out.println(firstName);
-        String lastName = secondStudentName.substring(spaceIndex + 1);  // +1 skips the space; no end: to the end of the String
+        String lastName = secondFullName.substring(spaceIndex + 1);  // +1 skips the space; no end: to the end of the String
         System.out.println(lastName);
         // Capitalize the first letter: take the first character, uppercase it,
         // then glue the rest of the String (from index 1) back on with +.
